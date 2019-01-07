@@ -1,7 +1,8 @@
 [tool.poetry]
 name = "keepassx-tools"
 version = "0.1.0"
-description = ""
+license = "BSD-3-Clause"
+description = "Toolset for taking automated actions on KeePass databases (v3.x/v4.x)"
 authors = ["David Alexander <opensource@thelonelyghost.com>"]
 
 [tool.poetry.dependencies]
@@ -14,8 +15,8 @@ click = "^7.0"
 pytest = "^3.0"
 
 [tool.poetry.scripts]
-keepassxc-pwned = 'keepassx_hibp.cli.check:main'
-keepassx-pwned = 'keepassx_hibp.cli.check:main'
+keepassxc-pwned = 'keepassx_tools.cli.check:main'
+keepassx-pwned = 'keepassx_tools.cli.check:main'
 
 [build-system]
 requires = ["poetry>=0.12"]
