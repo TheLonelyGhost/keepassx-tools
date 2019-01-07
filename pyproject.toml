@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "keepassx-tools"
-version = "0.1.0"
+version = "0.1.1"
 license = "BSD-3-Clause"
 description = "Toolset for taking automated actions on KeePass databases (v3.x/v4.x)"
 authors = ["David Alexander <opensource@thelonelyghost.com>"]
