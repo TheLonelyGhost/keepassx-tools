@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "keepassx-hibp"
+name = "keepassx-tools"
 version = "0.1.0"
 description = ""
 authors = ["David Alexander <opensource@thelonelyghost.com>"]

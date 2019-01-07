@@ -1,4 +1,4 @@
-from keepassx_hibp import __version__
+from keepassx_tools import __version__
 
 
 def test_version():
