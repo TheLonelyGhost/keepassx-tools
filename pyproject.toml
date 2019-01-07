@@ -5,10 +5,17 @@ description = ""
 authors = ["David Alexander <opensource@thelonelyghost.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.6"
+pykeepass = "^3.0"
+pwnedapi = "^1.0"
+click = "^7.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.0"
+
+[tool.poetry.scripts]
+keepassxc-pwned = 'keepassx_hibp.cli.check:main'
+keepassx-pwned = 'keepassx_hibp.cli.check:main'
 
 [build-system]
 requires = ["poetry>=0.12"]
