@@ -3,5 +3,17 @@ addons:
   sonarcloud:
     organization: thelonelyghost-github
 
+language: python
+python:
+  - '3.6'
+
+install:
+  - 'pip install poetry'
+  - 'poetry install'
+
 script:
-  - sonar-scanner
+  - 'poetry check'
+  - 'poetry run pytest --cov=keepassx_tools --cov-report=xml:coverage-pytest.xml'
+
+after_success:
+  - 'sonar-scanner'
