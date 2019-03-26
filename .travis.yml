@@ -1,0 +1,7 @@
+---
+addons:
+  sonarcloud:
+    organization: thelonelyghost-github
+
+script:
+  - sonar-scanner
